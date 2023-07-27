@@ -1,0 +1,377 @@
+/*  */
+:root {
+  --primary: #0db198;
+  --white: #fff;
+}
+body {
+  background-color: #161616;
+  color: var(--white);
+}
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+.btn-outline-dark {
+  color: var(--white) !important;
+  border-color: 5px solid var(--white) !important;
+  background-color: #161616;
+}
+.primaryText {
+  color: var(--primary);
+  /* text-shadow: 1px 1px #fff; */
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.sub-heading {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.cardImage {
+  width: 100%;
+}
+/* navbar */
+.navbar {
+  padding: 24px 48px;
+  background-color: #161616 !important;
+}
+.btn-outline-primary:hover {
+  color: black !important;
+  background-color: var(--primary) !important;
+}
+.navbar-brand {
+  height: 40px;
+}
+.nav-link.active {
+  color: var(--primary) !important;
+}
+/* home */
+.banner {
+  position: absolute;
+  z-index: -1;
+  height: 80vh;
+  width: 100vw;
+  opacity: 0.5;
+}
+.homeContainer {
+  height: 80vh;
+}
+.buttonDiv {
+  margin-top: 10rem !important;
+}
+.subText {
+  font-size: large;
+}
+.homeButtons {
+  margin-right: 1rem;
+}
+.homeMap {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.brandContainer {
+  color: black;
+  background-color: var(--white);
+}
+.brandText {
+  font-weight: 600;
+}
+.animationRow {
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  width: calc(300px * 16);
+  animation: scroll 30s linear infinite;
+}
+.slide {
+  min-width: 300px !important;
+}
+.logos {
+  height: 140px;
+  width: 100px;
+}
+@keyframes scroll {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
+/* Planner */
+.plannerContainer {
+  background: url("https://res.cloudinary.com/dgrkhvtdv/image/upload/v1690357422/AdMavin/dotted_background_b8ee4x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #161616; */
+}
+.plannerRow {
+  display: flex;
+  justify-content: center;
+}
+/* Case study */
+.caseStudiesContainer {
+  background-image: url("https://res.cloudinary.com/dgrkhvtdv/image/upload/v1690356720/AdMavin/background_zfbras.png");
+  background-size: auto;
+  background-blend-mode: lighten;
+}
+.caseStudiesRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cardImage {
+  height: 195px;
+}
+/* news */
+.newsContainer {
+  background-color: black;
+}
+.newsRow {
+  display: flex;
+  justify-content: center;
+}
+.newsPara {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  max-height: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  content: "";
+  position: relative;
+}
+.newsPara:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent 5px, black);
+}
+.newsImage {
+  border: 1px solid white;
+  width: 90%;
+}
+.newsDescription {
+  font-size: 0.8rem;
+  color: #6c757d !important;
+}
+.newsCols {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Teams */
+.teamsPara {
+  line-height: 30px !important;
+  word-spacing: 5px;
+}
+.teamsRow {
+  display: flex;
+  justify-content: space-around;
+}
+.teamsImage {
+  height: 230px;
+  width: 100%;
+}
+.teamsImageCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.teamsImageRow {
+  height: 105px;
+}
+.teamsImageColRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* WhyAdMavin */
+.btn-dark {
+  border-radius: 0px !important;
+  border: 4px solid #5f5f5f;
+  color: #5f5f5f !important;
+  background-color: #000 !important;
+  font-weight: 900;
+}
+.btn-active {
+  border: 4px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+.whyAdMavinRow {
+  display: flex;
+  justify-content: center;
+}
+.whyAdMavinCol {
+  border-left: 3rem solid var(--primary);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.whyAdmavinImageCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyAdmavinImage {
+  width: 100%;
+  height: 350px;
+}
+#whyAdMavinDescription {
+  font-weight: 200;
+  font-size: medium;
+  opacity: 0.7 !important;
+}
+/* Culture */
+.cultureRow {
+  display: flex;
+  justify-content: center;
+}
+.cultureDescriptionL,
+.cultureTitleL {
+  text-align: end;
+}
+.cultureDescription,
+.cultureDescriptionL {
+  color: #6c757d;
+}
+.divider {
+  height: 450px;
+  width: 100%;
+}
+/* Footer */
+.contactContainer {
+  background-color: black;
+}
+.adMavinLogo {
+  height: 20px;
+  width: 340px;
+}
+.footerLinksDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footerLinks {
+  color: var(--primary);
+}
+.contactRow {
+  display: flex;
+  justify-content: center;
+}
+.bookMeeting {
+  color: var(--primary);
+  font-weight: 600;
+}
+.desktop {
+  display: none !important;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 761px) {
+  .newsDescription {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .cultureDescriptionL,
+  .cultureTitleL {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .heading {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  .sub-heading {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .mobile {
+    display: none;
+  }
+  .banner,
+  .homeContainer {
+    height: 90vh;
+  }
+  .homeContainer {
+    text-align: center;
+  }
+  .newsDescription {
+    display: none !important;
+  }
+  .newsImage {
+    border: 1px solid white;
+    width: 100%;
+    height: 75px;
+    /* position: relative; */
+  }
+  .whyAdMavinRow {
+    flex-direction: column-reverse;
+  }
+  .teamText {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  .teamsRow {
+    flex-direction: column-reverse;
+  }
+  .newsTitle {
+    max-width: 150px !important;
+  }
+  .contactCol {
+    text-align: center;
+  }
+  .cultureDescriptionL,
+  .cultureTitleL {
+    text-align: left;
+  }
+  .footerLinksDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teamsImageMobileCol {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* .teamsImageMobileCol:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+  } */
+  .teamsImage {
+    width: 150px;
+  }
+  .teamsImage2 {
+    height: 105px;
+    width: 150px;
+  }
+  .teamsImagehorizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .content {
+    display: flex;
+    /* align-items: ; */
+  }
+  .bullet {
+    width: 40px;
+    height: 40px;
+  }
+}
